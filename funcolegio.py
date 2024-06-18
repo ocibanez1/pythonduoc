@@ -22,9 +22,10 @@ def id_alumno():
     
 def val_nombre():
     nombre=input("Ingresar nombre:\n")
-    while len(nombre) < 5 and nombre != "":
+    while len(nombre) < 5:
         nombre=input("Ingresar nombre debe contener minimo 5 caracteres:\n")
     return nombre
+
 def val_edad():
     try:
         edad = int(input("Ingresar edad:\n"))
